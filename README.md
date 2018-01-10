@@ -1,9 +1,5 @@
-# Magisk Module Template
+# Unlock CN GMS
 
-This `README.md` will be shown in Magisk Manager. Place any information / changelog / notes you like.
+部分国行手机内置 GMS ，但是某些功能无法使用，比如设备无法在 web 版 Google play 中显示，无法开启 Location History 服务。
 
-**Please update `README.md` if you want to submit your module to the online repo!**
-
-Github has its own online markdown editor with a preview feature, you can use it to update your `README.md`! If you need more advanced syntax, check the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-For more information about modules and repos, please check the [official documentations](https://github.com/topjohnwu/Magisk/blob/master/docs/module_repo.md)
+该模块通过去除 ```<feature name="cn.google.services" />``` 来实现去除国行 GMS 的限制
