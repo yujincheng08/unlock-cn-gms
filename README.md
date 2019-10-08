@@ -1,5 +1,10 @@
 # Unlock CN GMS
+The GMS is restricted in China on some devices, because of a configuration file located in `/system/etc/permissions/services.cn.google.xml`.
+by this restriction, you can not enable `Google Location History` and the `Google Map Timeline` function can not use either.
 
+This module removes the restriction by replacing this configuration file.
+
+---
 部分国行手机，或者本地化后的 ROM 中有内置 GMS ，但是某些功能无法使用，比如无法开启 `Google Location History` 服务，无法使用 `Google Map Timeline`，设备无法在 Web 版 Google play 中显示等等。
 
 该模块通过替换 `/system/etc/permissions/services.cn.google.xml` 文件, 具体为删除如下配置行：
