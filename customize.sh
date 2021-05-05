@@ -1,7 +1,9 @@
-if [[ ${API} -ge 29 ]]; then
+if [ -f "/system/product/etc/permissions/services.cn.google.xml" ]; then
     PERMISSION_PATH="${MODPATH}/system/product/etc/permissions"
-else
+elif [ -f "/system/etc/permissions/services.cn.google.xml" ]; then
     PERMISSION_PATH="${MODPATH}/system/etc/permissions"
+else
+    abort "services.cn.google.xml Not found!"
 fi
 
 ui_print "--API ${API}"
